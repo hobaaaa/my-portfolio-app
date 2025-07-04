@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deniz Gökbudak - Frontend Developer Portfolio
 
-## Getting Started
+Welcome to my personal portfolio repository. I am Deniz Gökbudak, a passionate Frontend Developer based in Denizli, Turkey, with over 2 years of freelance experience. Here you can find the source code of my portfolio website showcasing my skills, projects, and services.
 
-First, run the development server:
+## About Me
+
+- Experienced in building responsive, accessible, and modern web applications.
+- Proficient in React, Next.js, Tailwind CSS, and TypeScript.
+- Strong focus on UI/UX design and clean code principles.
+- Open to remote opportunities and collaborations worldwide.
+
+## Portfolio Features
+
+- Dynamic dark/light theme support using `next-themes`.
+- Responsive navigation with smooth animations and accessibility considerations.
+- Project showcase with detailed descriptions and interactive UI.
+- Contact form integrated with Web3Forms API for seamless message sending.
+- Fully optimized images with Next.js Image component for performance.
+- Modern frontend techniques including React hooks, state management, and component-based architecture.
+
+## Tech Stack
+
+- **Frontend:** React, Next.js, TypeScript, Tailwind CSS
+- **State Management:** React hooks
+- **Styling:** Tailwind CSS with custom variants and themes
+- **Other:** Web3Forms API for contact form handling, Next.js Image optimization
+
+## 🖥️ Demo
+
+🔗 [Live Demo](---)  
+🔗 [Github Repository](https://github.com/hobaaaa/my-portfolio-app.git)
+
+## How to Run Locally
 
 ```bash
+git clone https://github.com/hobaaaa/my-portfolio-app.git
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+
+Feel free to reach out to me via email: denizgokbudak@gmail.com
+Or connect on [LinkedIn](https://www.linkedin.com/in/denizgokbudak/) | [GitHub](https://github.com/hobaaaa) | [Instagram](https://www.instagram.com/gokbudakdeniz/)
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

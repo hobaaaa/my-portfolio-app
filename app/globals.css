@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
+@custom-variant dark (&:is(.dark *));
+
 
 @theme inline {
+  --font-ovo: 'Ovo';
+  --font-outfit: 'Outfit';
+
+  --grid-cols-auto: repeat(auto-fit, minmax(200px, 1fr));
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-hover: var(--hover);
+  --color-shadow: var(--shadow);
+  --color-mobil-background: var(--mobil-background);
+  --color-button: var(--button);
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --hover: #fcf4ff;
+    --background: #fff;
+    --foreground: #000;
+    --shadow-hover: 4px 4px 0 #000;
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.2);
+    --mobil-background: #fff1f2;
+    --button: #000;
+  }
+
+  .dark {
+    --hover: #2a004a;
+    --background: #11001f;
+    --foreground: #fff;
+    --shadow-hover: 4px 4px 0 #fff;
+    --shadow-sm: 0 1px 3px rgb(255 255 255 / 0.4);
+    --mobil-background: #2a004a;
+    --button: #11001f;
+
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .grid-cols-auto {
+    grid-template-columns: var(--grid-cols-auto);
+  }
+
+  .hover-shadow:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  .shadow-person {
+    box-shadow: var(--shadow-sm);
+  }
 }
