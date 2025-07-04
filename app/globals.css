@@ -26,17 +26,17 @@
     --shadow-hover: 4px 4px 0 #000;
     --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.2);
     --mobil-background: #fff1f2;
-    --button: #000;
+    --button: #021526;
   }
 
   .dark {
-    --hover: #2a004a;
-    --background: #11001f;
+    --hover: #03346E;
+    --background: #021526;
     --foreground: #fff;
     --shadow-hover: 4px 4px 0 #fff;
     --shadow-sm: 0 1px 3px rgb(255 255 255 / 0.4);
-    --mobil-background: #2a004a;
-    --button: #11001f;
+    --mobil-background: #03346E;
+    --button: #021526;
 
   }
 }

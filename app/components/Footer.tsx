@@ -7,7 +7,16 @@ const Footer = () => {
   return (
     <div className="mt-20">
       <div className="text-center">
-        <Image src={assets.logo} alt="logo" className="w-36 mx-auto mb-2" />
+        <Image
+          src={assets.logo}
+          alt="logo"
+          className="w-36 mx-auto mb-2 dark:hidden"
+        />
+        <Image
+          src={assets.logo_dark}
+          alt="logo"
+          className="w-36 mx-auto mb-2 hidden dark:block"
+        />
         <div className="w-max flex items-center gap-2 mx-auto">
           <Image
             src={assets.mail_icon}

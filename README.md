@@ -27,7 +27,7 @@ Welcome to my personal portfolio repository. I am Deniz Gökbudak, a passionate 
 
 ## 🖥️ Demo
 
-🔗 [Live Demo](---)  
+🔗 [Live Demo](https://my-portfolio-app-lime-gamma.vercel.app)  
 🔗 [Github Repository](https://github.com/hobaaaa/my-portfolio-app.git)
 
 ## How to Run Locally
