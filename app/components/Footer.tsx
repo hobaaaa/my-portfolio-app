@@ -21,7 +21,13 @@ const Footer = () => {
           <Image
             src={assets.mail_icon}
             alt="mail-icon"
-            className="w-6"
+            className="w-6 dark:hidden"
+            width={24}
+          />
+          <Image
+            src={assets.mail_icon_dark}
+            alt="mail-icon"
+            className="w-6 hidden dark:block"
             width={24}
           />
           denizgokbudak@gmail.com
