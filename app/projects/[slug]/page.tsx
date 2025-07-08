@@ -6,9 +6,7 @@ import { use } from "react";
 type ProjectParams = {
   slug: string;
 };
-export default function ProjectPage(
-  promiseParams: Promise<{ params: ProjectParams }>
-) {
+const ProjectPage = (promiseParams: Promise<{ params: ProjectParams }>) => {
   const { params } = use(promiseParams);
   const project = workData.find((p) => p.slug === params.slug);
   if (!project) return notFound();
@@ -93,4 +91,6 @@ export default function ProjectPage(
       </div>
     </div>
   );
-}
+};
+
+export default ProjectPage;
