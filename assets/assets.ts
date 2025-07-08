@@ -1,3 +1,5 @@
+import { Assets, InfoItem, Project, Service } from "@/types";
+
 import user_image from "./user-image.png";
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
@@ -34,8 +36,9 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import { StaticImageData } from "next/image";
 
-export const assets = {
+export const assets: Assets = {
   user_image,
   code_icon,
   code_icon_dark,
@@ -74,7 +77,7 @@ export const assets = {
   right_arrow_bold_dark,
 };
 
-export const workData = [
+export const workData: Project[] = [
   {
     title: "AI Interview Mock App",
     description: "AI-First UI/UX Design",
@@ -225,7 +228,7 @@ export const workData = [
   },
 ];
 
-export const serviceData = [
+export const serviceData: Service[] = [
   {
     icon: assets.web_icon,
     title: "Custom Web design",
@@ -252,7 +255,7 @@ export const serviceData = [
   },
 ];
 
-export const infoList = [
+export const infoList: InfoItem[] = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
@@ -273,7 +276,7 @@ export const infoList = [
   },
 ];
 
-export const toolsData = [
+export const toolsData: StaticImageData[] = [
   assets.vscode,
   assets.firebase,
   assets.supabase,
