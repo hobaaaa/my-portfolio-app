@@ -3,12 +3,15 @@ import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { PageProps, Project } from "@/types";
+
+type Params = {
+  slug: string;
+};
 
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Params;
 }): Promise<Metadata> {
   const project = workData.find((p) => p.slug === params.slug);
   return {
@@ -16,10 +19,9 @@ export async function generateMetadata({
     description: project?.description,
   };
 }
-export default function ProjectPage({ params }: PageProps) {
-  const project: Project | undefined = workData.find(
-    (p) => p.slug === params.slug
-  );
+
+export default function ProjectPage({ params }: { params: Params }) {
+  const project = workData.find((p) => p.slug === params.slug);
   if (!project) return notFound();
 
   return (
@@ -102,4 +104,9 @@ export default function ProjectPage({ params }: PageProps) {
       </div>
     </div>
   );
+}
+export function generateStaticParams() {
+  return workData.map((project) => ({
+    slug: project.slug,
+  }));
 }
