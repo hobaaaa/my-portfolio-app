@@ -76,53 +76,110 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "AI Interview Mock App",
+    description: "AI-First UI/UX Design",
+    slug: "ai-interview",
     bgImage: "/work-1.png",
+    techStack: [
+      "Next.js 15",
+      "TailwindCSS",
+      "Firebase Auth",
+      "Firestore",
+      "Vapi SDK",
+      "Google Gemini API",
+    ],
+    content: {
+      intro:
+        "AI-powered mock interview application developed using Next.js 15 App Router, Firebase Authentication, Vapi SDK, and TailwindCSS. The application allows users to simulate real interview sessions with AI agents, receive feedback, and track their progress. It was built to enhance interview preparation experience using modern web technologies.",
+      features: [
+        "Secure Sign Up & Login (Firebase Auth)",
+        "Voice-based Interview Simulation (Vapi SDK)",
+        "Dynamic Question Generation (Google Gemini API)",
+        "Interview Feedback and Exercise Generation",
+        "Fully Responsive Design (TailwindCSS)",
+        "Protected Routes and User-Specific Data Management",
+      ],
+      lessons:
+        "Learned about integrating AI tools with modern frontend stacks, managing voice-based async states, prompt tuning with Gemini, and ensuring secure user flows via Firebase.",
+      github: "https://github.com/hobaaaa/aiMockInterviews",
+      demo: "https://ai-mock-interviews-olive-phi.vercel.app/",
+    },
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Project Management App",
+    description: "Collaborative Web App with AI Insights",
+    slug: "project-management",
     bgImage: "/work-2.png",
+    techStack: [
+      "Next.js 15",
+      "Supabase (Auth + PostgreSQL + Storage)",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Zustand",
+      "Zod",
+      "Tiptap",
+      "DnD Kit",
+      "Recharts",
+      "Resend",
+    ],
+    content: {
+      intro:
+        "Modern project management solution built with Next.js 15 App Router, featuring real-time collaboration, advanced task tracking, and AI-powered insights. Designed for seamless team productivity with cutting-edge tools and intuitive interfaces.",
+      features: [
+        "Secure Authentication with Supabase Auth",
+        "Drag & Drop Task Management (DnD Kit)",
+        "Rich Text Editor for task notes (Tiptap)",
+        "Real-time Data Sync via Supabase and React Query",
+        "Custom Data Visualizations using Recharts",
+        "Email Notifications via Resend",
+        "Type-safe Form Validation with Zod",
+        "Global State Management using Zustand",
+        "Responsive UI Components with Shadcn and Tailwind CSS",
+      ],
+      lessons:
+        "Explored state synchronization across realtime channels, integrated drag-and-drop logic with persistent updates, and optimized forms using Zod. Gained deep experience in composing modular components and building productive multi-user flows.",
+      github: "https://github.com/hobaaaa/projectManagementApp",
+      demo: "https://project-management-app-gules.vercel.app/",
+    },
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Swimming Pool Website",
+    description: "Custom Web design",
     bgImage: "/work-3.png",
+    slug: "swimming-pool",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "News-Weather Apps",
+    description: "Frontend Development",
     bgImage: "/work-4.png",
+    slug: "news-weather",
   },
 ];
 
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
+    title: "Custom Web design",
+    description:
+      "Responsive, user-friendly designs, Interfaces that combine aesthetics and functionality, Special solutions for brand identity",
   },
   {
     icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "AI-First UI/UX Design",
     description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
+      "Interactive interfaces with artificial intelligence (chatbots, recommendation systems), Prompt-oriented user experience design, experience design that understands and guides the AI ​​user",
   },
   {
     icon: assets.ui_icon,
-    title: "UI/UX design",
+    title: " Frontend Development",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
+      "Performance-oriented coding with Next.js & Tailwind, Component-based, reusable architecture, SEO and performance optimizations",
   },
   {
     icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+    title: "Multilingual & Accessible Design",
+    description:
+      "Multilingual structures, Coding in accordance with accessibility standards, Global user experience thinking",
   },
 ];
 
@@ -137,13 +194,13 @@ export const infoList = [
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "Management Information Systems (MIS)",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description: "All my projects are located here.",
   },
 ];
 

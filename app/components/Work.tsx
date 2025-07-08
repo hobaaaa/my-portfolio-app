@@ -2,9 +2,17 @@
 import { assets, workData } from "@/assets/assets";
 import { motion } from "motion/react";
 import Image from "next/image";
-import React from "react";
+import { useState } from "react";
 
 const Work = () => {
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+
+  const handleCardClick = (index: number) => {
+    if (typeof window !== "undefined" && window.innerWidth < 768) {
+      setActiveCard((prev) => (prev === index ? null : index));
+    }
+  };
+
   return (
     <motion.div
       id="work"
@@ -47,12 +55,19 @@ const Work = () => {
         {workData.map((project, index) => (
           <motion.div
             key={index}
-            className="aspect-square bg-cover bg-no-repeat bg-center rounded-lg relative cursor-pointer group"
+            onClick={() => handleCardClick(index)}
+            className="aspect-2/3 bg-cover bg-no-repeat bg-center rounded-lg relative cursor-pointer group flex items-center justify-center "
             style={{ backgroundImage: `url(${project.bgImage})` }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+            <div
+              className={`absolute left-1/2 transition-all duration-500 -translate-x-1/2 -translate-y-1/2
+              w-10/12 bg-white py-3 px-5 rounded-md flex items-center justify-between z-10
+              top-1/2 group-hover:top-[85%] md:group-hover:top-[85%]
+              ${activeCard === index ? "top-[85%]" : "top-1/2"}
+            `}
+            >
               <div>
                 <h3 className="font-semibold text-black">{project.title}</h3>
                 <p className="text-sm text-gray-700">{project.description}</p>
@@ -61,28 +76,23 @@ const Work = () => {
                 <Image src={assets.send_icon} alt="send-icon" className="w-5" />
               </div>
             </div>
+            <motion.a
+              href={`/projects/${project.slug}`}
+              className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto my-20 hover:bg-light-hover duration-500  dark:border-gray-300 hover:bg-hover dark:hover:text-white bg-white"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.1 }}
+            >
+              Show more{" "}
+              <Image
+                src={assets.right_arrow_bold}
+                alt="right-arrow"
+                className="w-4"
+              />
+            </motion.a>
           </motion.div>
         ))}
       </motion.div>
-      <motion.a
-        href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto my-20 hover:bg-light-hover duration-500 dark:text-gray-300 dark:border-gray-300 hover:bg-hover"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.1 }}
-      >
-        Show more{" "}
-        <Image
-          src={assets.right_arrow_bold}
-          alt="right-arrow"
-          className="w-4 dark:hidden"
-        />
-        <Image
-          src={assets.right_arrow_bold_dark}
-          alt="right-arrow"
-          className="w-4 hidden dark:block"
-        />
-      </motion.a>
     </motion.div>
   );
 };

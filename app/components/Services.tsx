@@ -1,5 +1,5 @@
 "use client";
-import { assets, serviceData } from "@/assets/assets";
+import { serviceData } from "@/assets/assets";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -43,7 +43,7 @@ const Services = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
       >
-        {serviceData.map(({ icon, title, description, link }, index) => (
+        {serviceData.map(({ icon, title, description }, index) => (
           <motion.div
             key={index}
             className="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-light-hover hover:-translate-y-1 hover:bg-hover hover-shadow duration-500"
@@ -56,14 +56,6 @@ const Services = () => {
             <p className="text-gray-600 dark:text-gray-300 text-sm leading-5">
               {description}
             </p>
-            <a href={link} className="flex items-center text-sm gap-2 mt-5">
-              Read more
-              <Image
-                src={assets.right_arrow}
-                alt="right-arrow"
-                className="w-4"
-              />
-            </a>
           </motion.div>
         ))}
       </motion.div>
