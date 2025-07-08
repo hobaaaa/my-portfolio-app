@@ -1,9 +1,11 @@
-import Navbar from "@/app/components/Navbar";
+import { notFound } from "next/navigation";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import Navbar from "@/app/components/Navbar";
+import type { FC } from "react";
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+// Next.js App Router tipiyle uyumlu component tanımı
+const ProjectPage: FC<{ params: { slug: string } }> = ({ params }) => {
   const project = workData.find((p) => p.slug === params.slug);
   if (!project) return notFound();
 
@@ -87,4 +89,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       </div>
     </div>
   );
-}
+};
+
+export default ProjectPage;
