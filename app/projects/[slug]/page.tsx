@@ -1,11 +1,25 @@
+import { Metadata } from "next";
 import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { PageParams } from "@/types";
+import { PageProps, Project } from "@/types";
 
-export default function ProjectPage({ params }: { params: PageParams }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const project = workData.find((p) => p.slug === params.slug);
+  return {
+    title: project?.title || "Project Not Found",
+    description: project?.description,
+  };
+}
+export default function ProjectPage({ params }: PageProps) {
+  const project: Project | undefined = workData.find(
+    (p) => p.slug === params.slug
+  );
   if (!project) return notFound();
 
   return (

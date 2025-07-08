@@ -78,9 +78,15 @@ export interface InfoItem {
 }
 
 // Route params tipi
-export interface PageParams {
-  slug: string;
-  params: {
-    slug: string;
-  };
+export interface PageProps {
+  params: { slug: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
+
+export type GenerateMetadataProps = {
+  params: { slug: string };
+};
+
+export type StaticParams = {
+  slug: string;
+}[];
