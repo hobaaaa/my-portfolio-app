@@ -143,6 +143,12 @@ export const workData = [
       ],
       lessons:
         "Explored state synchronization across realtime channels, integrated drag-and-drop logic with persistent updates, and optimized forms using Zod. Gained deep experience in composing modular components and building productive multi-user flows.",
+      images: [
+        "/project-management/work-3.png",
+        "/project-management/work-2.png",
+        "/project-management/work-1.png",
+        "/project-management/work-4.png",
+      ],
       github: "https://github.com/hobaaaa/projectManagementApp",
       demo: "https://project-management-app-gules.vercel.app/",
     },
@@ -152,12 +158,70 @@ export const workData = [
     description: "Custom Web design",
     bgImage: "/work-3.png",
     slug: "swimming-pool",
+    techStack: [
+      "Next.js 15",
+      "TailwindCSS",
+      "Firebase Auth",
+      "Firestore",
+      "Vapi SDK",
+      "Google Gemini API",
+    ],
+    content: {
+      intro:
+        "AI-powered mock interview application developed using Next.js 15 App Router, Firebase Authentication, Vapi SDK, and TailwindCSS. The application allows users to simulate real interview sessions with AI agents, receive feedback, and track their progress. It was built to enhance interview preparation experience using modern web technologies.",
+      features: [
+        "Secure Sign Up & Login (Firebase Auth)",
+        "Voice-based Interview Simulation (Vapi SDK)",
+        "Dynamic Question Generation (Google Gemini API)",
+        "Interview Feedback and Exercise Generation",
+        "Fully Responsive Design (TailwindCSS)",
+        "Protected Routes and User-Specific Data Management",
+      ],
+      lessons:
+        "Learned about integrating AI tools with modern frontend stacks, managing voice-based async states, prompt tuning with Gemini, and ensuring secure user flows via Firebase.",
+      images: [
+        "/ai-interview/work-1.png",
+        "/ai-interview/work-2.png",
+        "/ai-interview/work-3.png",
+      ],
+      github: "https://github.com/hobaaaa/aiMockInterviews",
+      demo: "https://ai-mock-interviews-olive-phi.vercel.app/",
+    },
   },
   {
     title: "News-Weather Apps",
     description: "Frontend Development",
     bgImage: "/work-4.png",
     slug: "news-weather",
+    techStack: [
+      "Next.js 15",
+      "TailwindCSS",
+      "Firebase Auth",
+      "Firestore",
+      "Vapi SDK",
+      "Google Gemini API",
+    ],
+    content: {
+      intro:
+        "AI-powered mock interview application developed using Next.js 15 App Router, Firebase Authentication, Vapi SDK, and TailwindCSS. The application allows users to simulate real interview sessions with AI agents, receive feedback, and track their progress. It was built to enhance interview preparation experience using modern web technologies.",
+      features: [
+        "Secure Sign Up & Login (Firebase Auth)",
+        "Voice-based Interview Simulation (Vapi SDK)",
+        "Dynamic Question Generation (Google Gemini API)",
+        "Interview Feedback and Exercise Generation",
+        "Fully Responsive Design (TailwindCSS)",
+        "Protected Routes and User-Specific Data Management",
+      ],
+      lessons:
+        "Learned about integrating AI tools with modern frontend stacks, managing voice-based async states, prompt tuning with Gemini, and ensuring secure user flows via Firebase.",
+      images: [
+        "/ai-interview/work-1.png",
+        "/ai-interview/work-2.png",
+        "/ai-interview/work-3.png",
+      ],
+      github: "https://github.com/hobaaaa/aiMockInterviews",
+      demo: "https://ai-mock-interviews-olive-phi.vercel.app/",
+    },
   },
 ];
 
