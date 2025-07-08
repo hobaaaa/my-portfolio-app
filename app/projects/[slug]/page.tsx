@@ -1,6 +1,6 @@
 import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
-import { div } from "motion/react-client";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
@@ -24,6 +24,19 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             {project.content!.intro}
           </p>
         </section>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {project.content!.images!.map((src, i) => (
+            <Image
+              key={i}
+              src={src}
+              alt={`Screenshot ${i + 1}`}
+              width={800}
+              height={600}
+              className="rounded-lg shadow-md"
+            />
+          ))}
+        </div>
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold mb-3">Technologies Used</h2>

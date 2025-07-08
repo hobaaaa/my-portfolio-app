@@ -37,7 +37,7 @@ const Navbar = () => {
           isScroll ? "bg-background/50 backdrop-blur-lg shadow-person" : ""
         } duration-200`}
       >
-        <a href="#top">
+        <a href="/.">
           <Image
             src={assets.logo}
             alt="logo"
@@ -56,7 +56,7 @@ const Navbar = () => {
           ref={sideMenuRef}
         >
           <li>
-            <a className="font-ovo" href="#top">
+            <a className="font-ovo" href="/.">
               Home
             </a>
           </li>

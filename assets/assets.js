@@ -101,6 +101,11 @@ export const workData = [
       ],
       lessons:
         "Learned about integrating AI tools with modern frontend stacks, managing voice-based async states, prompt tuning with Gemini, and ensuring secure user flows via Firebase.",
+      images: [
+        "/ai-interview/work-1.png",
+        "/ai-interview/work-2.png",
+        "/ai-interview/work-3.png",
+      ],
       github: "https://github.com/hobaaaa/aiMockInterviews",
       demo: "https://ai-mock-interviews-olive-phi.vercel.app/",
     },
