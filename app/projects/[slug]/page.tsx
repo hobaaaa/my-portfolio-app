@@ -1,27 +1,13 @@
 import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
-import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const project = workData.find((p) => p.slug === params.slug);
-  if (!project) return { title: "Project Not Found" };
-  return {
-    title: project.title,
-    description: project.description,
-  };
-}
-
 type Props = {
   params: {
     slug: string;
   };
 };
+
 export default function ProjectPage({ params }: Props) {
   const project = workData.find((p) => p.slug === params.slug);
   if (!project) return notFound();
