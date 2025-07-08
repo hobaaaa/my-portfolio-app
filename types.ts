@@ -16,12 +16,11 @@ export interface Project {
   content: ProjectContent;
 }
 
-export interface ProjectPageProps {
+export type PageParams = {
   params: {
     slug: string;
   };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
+};
 
 export interface Service {
   icon: string;

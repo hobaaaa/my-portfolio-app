@@ -1,10 +1,11 @@
+"use client";
 import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import type { Project, ProjectPageProps } from "@/types";
+import type { Project, PageParams } from "@/types";
 
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default function ProjectPage({ params }: PageParams) {
   const project: Project | undefined = workData.find(
     (p) => p.slug === params.slug
   );
