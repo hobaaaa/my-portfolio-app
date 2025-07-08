@@ -1,4 +1,3 @@
-"use client";
 import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
