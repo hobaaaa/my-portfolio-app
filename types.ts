@@ -56,7 +56,7 @@ export interface ProjectContent {
 export interface Project {
   title: string;
   description: string;
-  slug: string;
+  id: string;
   bgImage: string;
   techStack: string[];
   content: ProjectContent;
@@ -79,14 +79,16 @@ export interface InfoItem {
 
 // Route params tipi
 export interface PageProps {
-  params: { slug: string };
+  params: {
+    id: string;
+  };
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 export type GenerateMetadataProps = {
-  params: { slug: string };
+  params: { id: string };
 };
 
 export type StaticParams = {
-  slug: string;
+  id: string;
 }[];

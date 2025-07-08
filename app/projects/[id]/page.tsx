@@ -1,29 +1,15 @@
-import { Metadata } from "next";
 import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-
-type Params = {
-  slug: string;
-};
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Params;
-}): Promise<Metadata> {
-  const project = workData.find((p) => p.slug === params.slug);
-  return {
-    title: project?.title || "Project Not Found",
-    description: project?.description,
-  };
+export async function generateStaticParams() {
+  return workData.map((project) => ({
+    id: project.id.toString(),
+  }));
 }
-
-export default function ProjectPage({ params }: { params: Params }) {
-  const project = workData.find((p) => p.slug === params.slug);
+export default function ProjectPage({ params }: { params: { id: string } }) {
+  const project = workData.find((p) => p.id === params.id);
   if (!project) return notFound();
-
   return (
     <div>
       <Navbar />
@@ -104,9 +90,4 @@ export default function ProjectPage({ params }: { params: Params }) {
       </div>
     </div>
   );
-}
-export function generateStaticParams() {
-  return workData.map((project) => ({
-    slug: project.slug,
-  }));
 }

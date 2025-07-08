@@ -81,7 +81,7 @@ export const workData: Project[] = [
   {
     title: "AI Interview Mock App",
     description: "AI-First UI/UX Design",
-    slug: "ai-interview",
+    id: "ai-interview",
     bgImage: "/work-1.png",
     techStack: [
       "Next.js 15",
@@ -116,7 +116,7 @@ export const workData: Project[] = [
   {
     title: "Project Management App",
     description: "Collaborative Web App with AI Insights",
-    slug: "project-management",
+    id: "project-management",
     bgImage: "/work-2.png",
     techStack: [
       "Next.js 15",
@@ -160,7 +160,7 @@ export const workData: Project[] = [
     title: "Swimming Pool Website",
     description: "Custom Web design",
     bgImage: "/work-3.png",
-    slug: "swimming-pool",
+    id: "swimming-pool",
     techStack: [
       "Next.js 15",
       "TailwindCSS",
@@ -195,7 +195,7 @@ export const workData: Project[] = [
     title: "News-Weather Apps",
     description: "Frontend Development",
     bgImage: "/work-4.png",
-    slug: "news-weather",
+    id: "news-weather",
     techStack: [
       "Next.js 15",
       "TailwindCSS",

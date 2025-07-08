@@ -77,7 +77,7 @@ const Work = () => {
               </div>
             </div>
             <motion.a
-              href={`/projects/${project.slug}`}
+              href={`/projects/${project.id}`}
               className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto my-20 hover:bg-light-hover duration-500  dark:border-gray-300 hover:bg-hover dark:hover:text-white bg-white"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
