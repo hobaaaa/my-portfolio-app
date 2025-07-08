@@ -2,13 +2,13 @@ import Navbar from "@/app/components/Navbar";
 import { workData } from "@/assets/assets";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-export async function generateStaticParams() {
-  return workData.map((project) => ({
-    id: project.id.toString(),
-  }));
-}
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = workData.find((p) => p.id === params.id);
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const project = workData.find((p) => p.id === id);
   if (!project) return notFound();
   return (
     <div>
