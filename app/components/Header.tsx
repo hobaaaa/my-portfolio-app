@@ -48,37 +48,44 @@ const Header = () => {
       </motion.p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <motion.a
+        <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          href="#contact"
-          className="flex items-center gap-2 border-2 py-4 px-8 rounded-full mt-5 bg-black dark:bg-background text-white"
         >
-          contact with me
-          <Image
-            src={assets.right_arrow_white}
-            alt="right-arrow-white"
-            className="w-4"
-          />
-        </motion.a>
-
-        <motion.a
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            href="#contact"
+            className="flex items-center gap-2 border-2 py-4 px-8 rounded-full mt-5 bg-black dark:bg-background text-white hover:bg-gray-800  hover dark:hover:bg-hover duration-500"
+          >
+            contact with me
+            <Image
+              src={assets.right_arrow_white}
+              alt="right-arrow-white"
+              className="w-4"
+            />
+          </motion.a>
+        </motion.div>
+        <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          href="/sample-resume.pdf"
-          className="flex items-center gap-2 border-2 py-4 px-8 rounded-full mt-5 dark:bg-white dark:text-black"
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          my resume
-          <Image
-            src={assets.download_icon}
-            alt="download-icon"
-            className="w-4"
-          />
-        </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            href="/sample-resume.pdf"
+            className="flex items-center gap-2 border-2 py-4 px-8 rounded-full mt-5 dark:bg-white dark:text-black hover:bg-gray-400 dark:hover:bg-gray-200 duration-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            my resume
+            <Image
+              src={assets.download_icon}
+              alt="download-icon"
+              className="w-4"
+            />
+          </motion.a>
+        </motion.div>
       </div>
     </div>
   );

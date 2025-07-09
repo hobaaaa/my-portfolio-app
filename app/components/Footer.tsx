@@ -2,21 +2,30 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
 const Footer = () => {
   return (
     <div className="mt-20">
       <div className="text-center">
-        <Image
-          src={assets.logo}
-          alt="logo"
-          className="w-36 mx-auto mb-2 dark:hidden"
-        />
-        <Image
-          src={assets.logo_dark}
-          alt="logo"
-          className="w-36 mx-auto mb-2 hidden dark:block"
-        />
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          href="/."
+          className="inline-block"
+        >
+          <Image
+            src={assets.logo}
+            alt="logo"
+            className="w-40 mx-auto mb-2 dark:hidden"
+          />
+          <Image
+            src={assets.logo_dark}
+            alt="logo"
+            className="w-40 mx-auto mb-2 hidden dark:block"
+          />
+        </motion.a>
+
         <div className="w-max flex items-center gap-2 mx-auto">
           <Image
             src={assets.mail_icon}
@@ -38,22 +47,37 @@ const Footer = () => {
         <p>© 2025 Deniz Gokbudak. All rights reserved. </p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a target="_blank" href="https://github.com/hobaaaa">
+            <motion.a
+              target="_blank"
+              href="https://github.com/hobaaaa"
+              className="inline-block"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
               Github
-            </a>
+            </motion.a>
           </li>
           <li>
-            <a
+            <motion.a
               target="_blank"
               href="https://www.linkedin.com/in/denizgokbudak/"
+              className="inline-block"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
             >
               Linkedin
-            </a>
+            </motion.a>
           </li>
           <li>
-            <a target="_blank" href="https://www.instagram.com/gokbudakdeniz/">
+            <motion.a
+              target="_blank"
+              href="https://www.instagram.com/gokbudakdeniz/"
+              className="inline-block"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
               Instagram
-            </a>
+            </motion.a>
           </li>
         </ul>
       </div>

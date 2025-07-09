@@ -29,9 +29,9 @@ import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
+import ai_icon from "./ai-icon.png";
+import layout_icon from "./layout-icon.png";
+import multi_icon from "./multi-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -68,9 +68,9 @@ export const assets: Assets = {
   close_black,
   close_white,
   web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
+  ai_icon,
+  layout_icon,
+  multi_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -236,19 +236,19 @@ export const serviceData: Service[] = [
       "Responsive, user-friendly designs, Interfaces that combine aesthetics and functionality, Special solutions for brand identity",
   },
   {
-    icon: assets.mobile_icon,
+    icon: assets.ai_icon,
     title: "AI-First UI/UX Design",
     description:
       "Interactive interfaces with artificial intelligence (chatbots, recommendation systems), Prompt-oriented user experience design, experience design that understands and guides the AI ​​user",
   },
   {
-    icon: assets.ui_icon,
+    icon: assets.layout_icon,
     title: " Frontend Development",
     description:
       "Performance-oriented coding with Next.js & Tailwind, Component-based, reusable architecture, SEO and performance optimizations",
   },
   {
-    icon: assets.graphics_icon,
+    icon: assets.multi_icon,
     title: "Multilingual & Accessible Design",
     description:
       "Multilingual structures, Coding in accordance with accessibility standards, Global user experience thinking",

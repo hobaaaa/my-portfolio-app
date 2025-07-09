@@ -3,6 +3,7 @@ import Image from "next/image";
 import { assets } from "../../assets/assets";
 import { useEffect, useRef, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -37,53 +38,74 @@ const Navbar = () => {
           isScroll ? "bg-background/50 backdrop-blur-lg shadow-person" : ""
         } duration-200`}
       >
-        <a href="/.">
+        <motion.a
+          href="/."
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+        >
           <Image
             src={assets.logo}
             alt="logo"
-            className="w-28 cursor-pointer lg:mr-14 dark:hidden"
+            className="w-36 cursor-pointer lg:mr-14 dark:hidden"
           />
           <Image
             src={assets.logo_dark}
             alt="logo"
-            className="w-28 cursor-pointer lg:mr-14 hidden dark:block"
+            className="w-36 cursor-pointer lg:mr-14 hidden dark:block"
           />
-        </a>
+        </motion.a>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-10 rounded-full py-3 px-12 ${
             isScroll ? "" : "bg-background/50 shadow-person"
           } duration-200`}
           ref={sideMenuRef}
         >
-          <li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
             <a className="font-ovo" href="/.">
               Home
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
             <a className="font-ovo" href="#about">
               About
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
             <a className="font-ovo" href="#services">
               Services
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
             <a className="font-ovo" href="#work">
               My Work
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
             <a className="font-ovo" href="#contact">
               Contact Me
             </a>
-          </li>
+          </motion.li>
         </ul>
         <div className="flex items-center gap-4">
           <ThemeToggle />
-          <a
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
             href="#contact"
             className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo"
           >
@@ -98,7 +120,7 @@ const Navbar = () => {
               alt="mail"
               className="w-3 hidden dark:block"
             />
-          </a>
+          </motion.a>
 
           <button className="cursor-pointer block md:hidden ml-3">
             <Image
