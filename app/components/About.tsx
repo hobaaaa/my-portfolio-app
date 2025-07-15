@@ -31,7 +31,7 @@ const About = () => {
       </motion.h2>
 
       <motion.div
-        className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
+        className="flex w-full flex-col lg:flex-row items-center justify-center gap-20 my-20"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -49,7 +49,7 @@ const About = () => {
           />
         </motion.div>
         <motion.div
-          className="flex-1"
+          className=""
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}

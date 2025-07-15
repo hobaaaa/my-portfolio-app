@@ -1,7 +1,5 @@
-// types.ts
 import { StaticImageData } from "next/image";
 
-// Asset tipleri
 export type AssetKey =
   | "user_image"
   | "code_icon"
@@ -42,7 +40,6 @@ export type AssetKey =
 
 export type Assets = Record<AssetKey, StaticImageData>;
 
-// Proje içeriği tipi
 export interface ProjectContent {
   intro: string;
   features: string[];
@@ -52,7 +49,6 @@ export interface ProjectContent {
   demo: string;
 }
 
-// Proje tipi
 export interface Project {
   title: string;
   description: string;
@@ -62,14 +58,12 @@ export interface Project {
   content: ProjectContent;
 }
 
-// Servis tipi
 export interface Service {
   icon: StaticImageData;
   title: string;
   description: string;
 }
 
-// Bilgi listesi tipi
 export interface InfoItem {
   icon: StaticImageData;
   iconDark: StaticImageData;
@@ -77,7 +71,6 @@ export interface InfoItem {
   description: string;
 }
 
-// Route params tipi
 export interface PageProps {
   params: {
     id: string;

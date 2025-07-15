@@ -17,9 +17,9 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Frontend Developer | Modern UI/UX & Supabase Uzmanı – Deniz",
+  title: "Frontend Developer | Modern UI/UX & Supabase Expert – Deniz",
   description:
-    "Tailwind, Supabase ve modern UI/UX odaklı projelerle geliştirdiğim portfolyomda kullanıcı deneyimini önceleyen, etkileyici frontend çözümlerini keşfedin.",
+    "Discover impressive frontend solutions that prioritize user experience in my portfolio, developed with Tailwind, Supabase, and modern UI/UX focused projects.",
 };
 
 export default function RootLayout({
