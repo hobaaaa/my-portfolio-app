@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[%8] py-4 flex items-center justify-between z-50 ${
+        className={`w-full fixed px-[12%] py-4 flex items-center justify-between z-50 ${
           isScroll ? "bg-background/50 backdrop-blur-lg shadow-person" : ""
         } duration-200`}
       >

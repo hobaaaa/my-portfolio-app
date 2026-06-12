@@ -36,6 +36,11 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import location_icon_dark from "./location_icon_dark.png";
+import location_icon from "./location_icon.png";
+import phone_icon from "./phone_icon.png";
+import phone_icon_dark from "./phone_icon_dark.png";
+
 import { StaticImageData } from "next/image";
 
 export const assets: Assets = {
@@ -75,6 +80,10 @@ export const assets: Assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  location_icon_dark,
+  location_icon,
+  phone_icon,
+  phone_icon_dark,
 };
 
 export const workData: Project[] = [

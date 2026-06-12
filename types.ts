@@ -36,7 +36,11 @@ export type AssetKey =
   | "right_arrow"
   | "send_icon"
   | "right_arrow_bold"
-  | "right_arrow_bold_dark";
+  | "right_arrow_bold_dark"
+  | "location_icon_dark"
+  | "location_icon"
+  | "phone_icon"
+  | "phone_icon_dark";
 
 export type Assets = Record<AssetKey, StaticImageData>;
 
