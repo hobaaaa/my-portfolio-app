@@ -70,12 +70,12 @@ const Footer = () => {
             className="w-6 hidden dark:block"
             width={24}
           />
-          Değirmenönü mh. 1739 sk. NO:18 Daire:7 Merkezefendi/Denizli
+          Denizli, Turkey
         </div>
       </div>
 
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[12%] mt-12 py-6 gap-8">
-        <p>© 2025 Deniz Gokbudak. All rights reserved. </p>
+        <p>(c) 2026 Deniz Gokbudak. All rights reserved. </p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
             <motion.a

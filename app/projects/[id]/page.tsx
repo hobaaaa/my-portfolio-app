@@ -71,22 +71,28 @@ export default async function ProjectPage({
           </p>
         </section>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
-          <a
-            href={project.content.github}
-            target="_blank"
-            className="bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition duration-300"
-          >
-            View GitHub
-          </a>
-          <a
-            href={project.content.demo}
-            target="_blank"
-            className="bg-background border border-foreground px-6 py-3 rounded-md font-medium hover:bg-hover transition duration-300"
-          >
-            Live Demo
-          </a>
-        </div>
+        {(project.content.github || project.content.demo) && (
+          <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
+            {project.content.github && (
+              <a
+                href={project.content.github}
+                target="_blank"
+                className="bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition duration-300"
+              >
+                View GitHub
+              </a>
+            )}
+            {project.content.demo && (
+              <a
+                href={project.content.demo}
+                target="_blank"
+                className="bg-background border border-foreground px-6 py-3 rounded-md font-medium hover:bg-hover transition duration-300"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

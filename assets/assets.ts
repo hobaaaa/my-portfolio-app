@@ -88,31 +88,64 @@ export const assets: Assets = {
 
 export const workData: Project[] = [
   {
-    title: "AI Interview Mock App",
-    description: "AI-First UI/UX Design",
-    id: "ai-interview",
-    bgImage: "/work-1.png",
+    title: "Artexo",
+    description: "Multi-tenant SaaS appointment platform",
+    id: "artexo",
+    bgImage: "/artexo-app/work-1.png",
     techStack: [
-      "Next.js 15",
-      "TailwindCSS",
-      "Firebase Auth",
-      "Firestore",
-      "Vapi SDK",
-      "Google Gemini API",
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
     ],
     content: {
       intro:
-        "AI-powered mock interview application developed using Next.js 15 App Router, Firebase Authentication, Vapi SDK, and TailwindCSS. The application allows users to simulate real interview sessions with AI agents, receive feedback, and track their progress. It was built to enhance interview preparation experience using modern web technologies.",
+        "Artexo is a multi-tenant appointment management platform with authentication, role-based access, and public booking flows. It focuses on scalable SaaS structure, clean user flows, and business-ready appointment operations.",
       features: [
-        "Secure Sign Up & Login (Firebase Auth)",
-        "Voice-based Interview Simulation (Vapi SDK)",
-        "Dynamic Question Generation (Google Gemini API)",
-        "Interview Feedback and Exercise Generation",
-        "Fully Responsive Design (TailwindCSS)",
-        "Protected Routes and User-Specific Data Management",
+        "Multi-tenant application architecture",
+        "Authentication and role-based access control",
+        "Public booking flow for customers",
+        "Supabase and PostgreSQL data layer",
+        "Responsive dashboard interface",
       ],
       lessons:
-        "Learned about integrating AI tools with modern frontend stacks, managing voice-based async states, prompt tuning with Gemini, and ensuring secure user flows via Firebase.",
+        "Improved SaaS architecture skills around tenant-aware data modeling, protected routes, and production-focused dashboard flows.",
+      images: [
+        "/artexo-app/work-1.png",
+        "/artexo-app/work-2.png",
+        "/artexo-app/work-3.png",
+        "/artexo-app/work-4.png",
+      ],
+      github: "",
+      demo: "",
+    },
+  },
+  {
+    title: "AI Mock Interview App",
+    description: "Voice-based AI interview platform",
+    id: "ai-interview",
+    bgImage: "/work-1.png",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase",
+      "Firestore",
+      "Gemini AI",
+      "Vapi AI",
+    ],
+    content: {
+      intro:
+        "Voice-based AI interview platform built with Next.js, Firebase, Firestore, Gemini AI, and Vapi AI. The application helps users practice interviews with AI-powered voice interactions and structured interview flows.",
+      features: [
+        "Firebase authentication",
+        "Voice-based interview simulation with Vapi AI",
+        "AI question and feedback flows with Gemini AI",
+        "User-specific interview data stored in Firestore",
+        "Responsive interface built with Tailwind CSS",
+      ],
+      lessons:
+        "Strengthened experience integrating AI services into frontend products, handling voice-based async states, and building protected user flows.",
       images: [
         "/ai-interview/work-1.png",
         "/ai-interview/work-2.png",
@@ -123,38 +156,50 @@ export const workData: Project[] = [
     },
   },
   {
-    title: "Project Management App",
-    description: "Collaborative Web App with AI Insights",
-    id: "project-management",
-    bgImage: "/work-2.png",
-    techStack: [
-      "Next.js 15",
-      "Supabase (Auth + PostgreSQL + Storage)",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Zustand",
-      "Zod",
-      "Tiptap",
-      "DnD Kit",
-      "Recharts",
-      "Resend",
-    ],
+    title: "AI YouTube Automation",
+    description: "AI workflow for content generation",
+    bgImage: "/work-3.png",
+    id: "ai-youtube-automation",
+    techStack: ["Next.js", "TypeScript", "OpenAI API", "Make", "Replicate"],
     content: {
       intro:
-        "Modern project management solution built with Next.js 15 App Router, featuring real-time collaboration, advanced task tracking, and AI-powered insights. Designed for seamless team productivity with cutting-edge tools and intuitive interfaces.",
+        "AI-powered workflow for generating scripts, scenes, and thumbnails for YouTube content. The project combines frontend product thinking with external automation and AI generation services.",
       features: [
-        "Secure Authentication with Supabase Auth",
-        "Drag & Drop Task Management (DnD Kit)",
-        "Rich Text Editor for task notes (Tiptap)",
-        "Real-time Data Sync via Supabase and React Query",
-        "Custom Data Visualizations using Recharts",
-        "Email Notifications via Resend",
-        "Type-safe Form Validation with Zod",
-        "Global State Management using Zustand",
-        "Responsive UI Components with Shadcn and Tailwind CSS",
+        "Script generation workflow",
+        "Scene planning and content structure",
+        "Thumbnail generation using AI services",
+        "Automation flow integration with Make",
+        "Frontend interface built with Next.js and TypeScript",
       ],
       lessons:
-        "Explored state synchronization across realtime channels, integrated drag-and-drop logic with persistent updates, and optimized forms using Zod. Gained deep experience in composing modular components and building productive multi-user flows.",
+        "Expanded practical experience with AI APIs, automation tools, and multi-step content generation workflows.",
+      images: [
+        "/swimming-pool/work-1.png",
+        "/swimming-pool/work-2.png",
+        "/swimming-pool/work-3.png",
+      ],
+      github: "",
+      demo: "",
+    },
+  },
+  {
+    title: "Project Management App",
+    description: "Task management platform with realtime data",
+    id: "project-management",
+    bgImage: "/work-2.png",
+    techStack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
+    content: {
+      intro:
+        "Task management platform featuring authentication, realtime database integration, and dashboard architecture. It was designed to support structured project workflows with a modern frontend stack.",
+      features: [
+        "Authentication with Supabase",
+        "Realtime database integration",
+        "Dashboard-based task management",
+        "PostgreSQL-backed application data",
+        "Responsive interface with reusable components",
+      ],
+      lessons:
+        "Built deeper experience with Supabase-backed frontend applications, realtime data flows, and dashboard UI architecture.",
       images: [
         "/project-management/work-3.png",
         "/project-management/work-2.png",
@@ -165,80 +210,32 @@ export const workData: Project[] = [
       demo: "https://project-management-app-gules.vercel.app/",
     },
   },
-  {
-    title: "Swimming Pool Website",
-    description: "Custom Web design",
-    bgImage: "/work-3.png",
-    id: "swimming-pool",
-    techStack: [
-      "Next.js 15",
-      "TailwindCSS",
-      "TypeScript",
-      "Web3 Forms",
-      "Motion",
-    ],
-    content: {
-      intro:
-        "A responsive and animated landing page built for a local pool construction business in Denizli, Turkey. This project showcases a clean UI/UX flow, smooth animations, and brand-focused design — ideal for small business websites.",
-      features: [
-        "Fully responsive for desktop and mobile",
-        "Animated entry using motion elements",
-        "Custom branding for Safir Yapı",
-        "Contact form integrated with Web3Forms API for seamless message sending.",
-        "Clear call-to-action for customer engagement",
-        "Fully optimized images with Next.js Image component for performance.",
-      ],
-      lessons: "",
-      images: [
-        "/swimming-pool/work-1.png",
-        "/swimming-pool/work-2.png",
-        "/swimming-pool/work-3.png",
-      ],
-      github: "https://github.com/hobaaaa/swimming-pool-app",
-      demo: "https://swimming-pool-app.vercel.app/",
-    },
-  },
-  {
-    title: "AI UI Toolkit",
-    description: "Frontend Development",
-    bgImage: "/work-4.png",
-    id: "ai-ui-toolkit",
-    techStack: ["Next.js 15", "TailwindCSS"],
-    content: {
-      intro: "",
-      features: [""],
-      lessons: "",
-      images: [""],
-      github: "",
-      demo: "",
-    },
-  },
 ];
 
 export const serviceData: Service[] = [
   {
     icon: assets.web_icon,
-    title: "Custom Web design",
+    title: "Frontend Development",
     description:
-      "Responsive, user-friendly designs, Interfaces that combine aesthetics and functionality, Special solutions for brand identity",
+      "Modern web applications built with React, Next.js, TypeScript, Tailwind CSS, and component-based frontend architecture.",
   },
   {
     icon: assets.ai_icon,
-    title: "AI-First UI/UX Design",
+    title: "AI Product Interfaces",
     description:
-      "Interactive interfaces with artificial intelligence (chatbots, recommendation systems), Prompt-oriented user experience design, experience design that understands and guides the AI ​​user",
+      "AI-powered workflows and interfaces using services such as OpenAI, Gemini, Vapi, Make, and Replicate.",
   },
   {
     icon: assets.layout_icon,
-    title: " Frontend Development",
+    title: "WordPress & CMS",
     description:
-      "Performance-oriented coding with Next.js & Tailwind, Component-based, reusable architecture, SEO and performance optimizations",
+      "Custom business websites, corporate WordPress builds, Elementor layouts, Sanity CMS content structures, and UI maintenance.",
   },
   {
     icon: assets.multi_icon,
-    title: "Multilingual & Accessible Design",
+    title: "Deployment & Integrations",
     description:
-      "Multilingual structures, Coding in accordance with accessibility standards, Global user experience thinking",
+      "REST API integrations, hosting, domains, SSL, DNS, Vercel, Cloudflare, and production environment management.",
   },
 ];
 
@@ -246,20 +243,20 @@ export const infoList: InfoItem[] = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    title: "Frontend",
+    description: "React, Next.js, TypeScript, JavaScript, Tailwind CSS",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "Management Information Systems (MIS)",
+    description: "Management Information Systems, Anadolu University",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
-    title: "Projects",
-    description: "All my projects are in the works section.",
+    title: "Experience",
+    description: "Freelance, PAK Medya, Gradatim Soft",
   },
 ];
 

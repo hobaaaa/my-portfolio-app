@@ -55,10 +55,11 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <p className="mb-10 max-w-2xl font-ovo">
-            I am an experienced Frontend Developer with over a decade of
-            professional expertise in the field. Throughout my career, I have
-            had the privilege of collaborating with prestigious organizations,
-            contributing to their success and growth
+            I am a Frontend Developer experienced in building modern web
+            applications, custom business websites, authentication flows, REST
+            API integrations, and scalable SaaS interfaces. I work across
+            freelance and agency environments, taking projects from client
+            requirements to deployment.
           </p>
           <motion.ul
             className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl"

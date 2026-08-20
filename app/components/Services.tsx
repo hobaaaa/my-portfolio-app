@@ -18,7 +18,7 @@ const Services = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        What i offers
+        What I offer
       </motion.h4>
       <motion.h2
         className="text-center text-5xl font-ovo"
@@ -34,8 +34,8 @@ const Services = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        I am a frontend developer from California, USA with 10 years of
-        experience in multiple companies like Microsoft, Tesla and Apple.
+        I build responsive web products with Next.js, React, TypeScript,
+        WordPress, REST API integrations, and production deployment workflows.
       </motion.p>
       <motion.div
         className="grid grid-cols-auto gap-6 my-10"
